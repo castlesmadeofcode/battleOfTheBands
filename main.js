@@ -8,13 +8,12 @@
 // The function will increment a global variable by one each time it is invoked, 
 // and return that number, and the band name concatenated together.
 
-let bandNumber = 1
+let bandNumber = 0
 
-const takeNumber = function () {
-    /*
-        Write your awesome code here. See comments
-        below for what should be returned.
-    */
+const takeNumber = function (bandName) {
+    bandNumber++;
+    return `${bandNumber}. ${bandName}`;
+    
 }
 
 const scum = takeNumber("Galactic Scum")
